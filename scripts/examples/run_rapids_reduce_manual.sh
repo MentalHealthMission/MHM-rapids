@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-# Author: jac
 # Run rapids_reduce with a manual reduce spec (overrides auto_from_run_spec).
 set -euo pipefail
 
-SPEC_PATH=${1:-tmp/specs/rapids_postfeatures_combined/rapids-reduce.yaml}
+SPEC_PATH=${1:-specs/examples/full/rapids-reduce.yaml}
 RAPIDS_DIR=${2:-/mnt/connect/workdir/runs/REPLACE_RUN_ID/rapids}
 OUTPUT_DIR=${3:-/mnt/connect/workdir/runs/REPLACE_RUN_ID/combined}
 PARTICIPANTS=${4:-}
