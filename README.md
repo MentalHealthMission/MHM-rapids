@@ -3,8 +3,17 @@
 Reusable/default RAPIDS adoption module for MHM pipeline profiles.
 
 This repository contains neutral RAPIDS staging, reduction, combination, and
-adoption-contract helpers. CONNECT-specific RAPIDS mappings and profiles live
-in `ConnectDigitalStudy/connect-rapids`.
+adoption-contract helpers. It is intended to make RAPIDS-compatible processing
+usable from MHM pipeline profiles without making any one study profile part of
+the reusable module.
+
+## What This Package Owns
+
+- RAPIDS input staging helpers
+- reduced-output normalization helpers
+- combined-output helpers
+- adoption contracts for pipeline integration
+- small fixtures for package-level checks
 
 ## Install
 
@@ -17,6 +26,3 @@ from mhm_core.rapids.adoption import rapids_module_contract
 print(rapids_module_contract().module_id)
 PYCODE
 ```
-
-This branch was extracted from
-`connect-summary@011391223d0acaa28eb4c19ad5cd3e8f3e022d0b`.
