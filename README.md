@@ -1,19 +1,18 @@
 # MHM RAPIDS
 
-Reusable/default RAPIDS adoption module for MHM pipeline profiles.
+Python helpers for RAPIDS-compatible sensor-data processing.
 
-This repository contains neutral RAPIDS staging, reduction, combination, and
-adoption-contract helpers. It is intended to make RAPIDS-compatible processing
-usable from MHM pipeline profiles without making any one study profile part of
-the reusable module.
+Use this package to stage external data for RAPIDS, normalize RAPIDS outputs,
+combine reduced metric outputs, and expose module metadata for pipeline
+configuration.
 
-## What This Package Owns
+## What You Can Do
 
-- RAPIDS input staging helpers
-- reduced-output normalization helpers
-- combined-output helpers
-- adoption contracts for pipeline integration
-- small fixtures for package-level checks
+- stage RAPIDS input trees
+- normalize reduced RAPIDS outputs
+- combine per-metric outputs
+- inspect the RAPIDS module contract
+- run small fixture-based checks
 
 ## Install
 
