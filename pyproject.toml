@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mhm-rapids"
+version = "0.1.0"
+description = "Reusable RAPIDS adoption module for MHM pipelines"
+requires-python = ">=3.10"
+dependencies = [
+  "PyYAML==6.0.2",
+  "pandas==2.3.3",
+  "mhm-pipelines @ git+https://github.com/MentalHealthMission/MHM-data-pipelines.git@refactor/bootstrap-2026-05-22",
+]
+
+[tool.setuptools.packages.find]
+include = [
+  "mhm_core.rapids*",
+  "mhm_core.pipeline.integrations*",
+]
+namespaces = true
