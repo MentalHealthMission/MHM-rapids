@@ -16,6 +16,5 @@ dependencies = [
 [tool.setuptools.packages.find]
 include = [
   "mhm_core.rapids*",
-  "mhm_core.pipeline.integrations*",
 ]
 namespaces = true
