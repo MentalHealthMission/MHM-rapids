@@ -36,7 +36,7 @@ def _iter_entities(rapids_dir: Path, entities: Optional[List[str]]) -> List[str]
 
 
 def _iter_participants(rapids_dir: Path, participants: Optional[List[str]]) -> List[str]:
-    """Compatibility alias for historical participant-oriented callers."""
+    """Compatibility alias for participant-oriented callers."""
 
     return _iter_entities(rapids_dir, participants)
 

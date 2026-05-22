@@ -1,8 +1,7 @@
 """Executable neutral RAPIDS fixture helpers.
 
-These helpers deliberately avoid CONNECT concepts. They stage a small
-entity/group metric tree into the neutral external-data shape used to rehearse
-the MHM RAPIDS module boundary before moving production RAPIDS code.
+These helpers stage a small entity/group metric tree into the neutral
+external-data shape used to exercise the MHM RAPIDS module boundary.
 """
 
 from __future__ import annotations
