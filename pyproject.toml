@@ -10,7 +10,7 @@ requires-python = ">=3.10"
 dependencies = [
   "PyYAML==6.0.2",
   "pandas==2.3.3",
-  "mhm-pipelines @ git+https://github.com/MentalHealthMission/MHM-data-pipelines.git@a1b3283838cc2847341f8a9d1c38f9694c0335cb",
+  "mhm-pipelines @ git+https://github.com/MentalHealthMission/MHM-data-pipelines.git@5d203336f9a75ef9b8a552b0fbbf5b50174da35e",
 ]
 
 [tool.setuptools.packages.find]

@@ -7,7 +7,7 @@ RAPIDS_DIR=${2:-/tmp/mhm-rapids-example/runs/REPLACE_RUN_ID/rapids}
 OUTPUT_DIR=${3:-/tmp/mhm-rapids-example/runs/REPLACE_RUN_ID/combined}
 ENTITIES=${4:-}
 
-CMD=(python3 mhm_core/reduce_rapids_features.py --spec "$SPEC_PATH" --rapids-dir "$RAPIDS_DIR" --output-dir "$OUTPUT_DIR")
+CMD=(python3 -m mhm_core.rapids.reduction --spec "$SPEC_PATH" --rapids-dir "$RAPIDS_DIR" --output-dir "$OUTPUT_DIR")
 if [[ -n "$ENTITIES" ]]; then
   CMD+=(--entities "$ENTITIES")
 fi
